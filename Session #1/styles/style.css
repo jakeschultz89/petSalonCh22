@@ -66,3 +66,15 @@ div.input-container label{
     background-color:rgb(22, 55, 107);
     color:white;
 }
+/* #pets{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin: 1rem auto;
+} */
+.pet{
+    background-color: lightblue;
+    border-radius:5px;
+    padding: 0.5rem;
+}

@@ -1,7 +1,7 @@
 function displayInfo(){
     document.getElementById("info").innerHTML=`
-    <h3> Welcome to ${saloon.name}</h3>
-    <p>${saloon.address.state}, ${saloon.address.city}. ${saloon.address.street}, ZIP: ${saloon.address.zip}</p>
+    <h3> Welcome to ${salon.name}</h3>
+    <p>${salon.address.street}, ${salon.address.city}. ${salon.address.state} ${salon.address.zip}</p>
     `;
 }
 displayInfo();
