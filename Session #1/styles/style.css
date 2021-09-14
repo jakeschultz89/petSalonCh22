@@ -1,0 +1,68 @@
+:root{
+    --primary:#d56;
+    --secondary:rgb(255, 233, 111);
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+}
+header{
+    height: 40vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--primary);
+}
+header h1{
+    color:white;
+    font-size:3rem;
+}
+header nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:3rem;
+}
+header nav a:last-of-type{
+    margin-right:0;
+}
+
+header nav a:hover{
+    color:var(--secondary);
+}
+.container{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+}
+#info{
+    text-align: center;
+}
+
+div.input-container{
+    display:flex;
+    padding:1rem;
+}
+div.input-container input,div.input-container select{
+    flex-basis: 50rem;
+    padding:0.3rem;
+    border-radius: 3px;
+    border:1px solid lightslategray;
+    font-size: 18px;
+}
+div.input-container label{
+    flex-basis: 15rem;
+    text-align: right;
+    margin-right:1rem;
+}
+.btn{
+    border:none;
+    padding:0.5rem;
+    width:8rem;
+    border-radius:5px;
+    font-size: 18px;
+}
+.btn-register{
+    background-color:rgb(22, 55, 107);
+    color:white;
+}
