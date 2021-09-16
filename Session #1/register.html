@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     <title>Register</title>
@@ -27,6 +27,23 @@
                 <label>Name:</label>
                 <input type="text" id="petName">
             </div>
+            <!-- <div class="input-container">
+                <label>Type:</label>
+                <input type="text" id="petType">
+            </div> -->
+            <div class="input-container">
+                <label>Type:</label>
+                <select id="petType">
+                    <option value="" disabled selected>-- Select an option --</option>
+                    <option value="Human">Human</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Lizard">Lizard</option>
+                    <option value="Bird">Bird</option>
+                    <option value="Fish">Fish</option>
+                    <option value="Dragon">Dragon</option>
+                </select>
+            </div>
             <div class="input-container">
                 <label>Age:</label>
                 <input type="number" id="petAge">
@@ -43,9 +60,11 @@
                 <label>Service:</label>
                 <select id="petService">
                     <option value="" disabled selected>-- Select an option --</option>
-                    <option value="shower">Shower</option>
-                    <option value="nails">Nails cut</option>
-                    <option value="grooming">Grooming</option>
+                    <option value="Shower">Shower</option>
+                    <option value="Nails">Nails cut</option>
+                    <option value="Grooming">Grooming</option>
+                    <option value="Neutering">Neutering</option>
+                    <option value="Swedish Massage">Swedish Massage</option>
                 </select>
             </div>
             <div class="input-container">
@@ -57,17 +76,24 @@
                 <input type="text" id="ownerPhone">
             </div>
 
-            <button class="btn btn-register" onclick="register();">Register</button>
+            <div class="alert-section">
+                <button class="btn btn-register">Register</button>
+                <p class="hide" id="alert">A pet was registered!</p>
+            </div>
         </div>
 
         <!-- <div id="pets" class="container">
 
         </div> -->
-
+        <div class="search-container container">
+            <input type="search" id="searchInput">
+            <button class="btn btn-search btn-register">Search</button>
+        </div>
         <table class="pets-table table table-striped container">
             <thead>
                 <tr>
                     <th>Name</th>
+                    <th>Type</th>
                     <th>Age</th>
                     <th>Gender</th>
                     <th>Breed</th>
